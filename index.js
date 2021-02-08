@@ -46,7 +46,7 @@ app.post('/not', (req, res)=> {
     setTimeout(()=> {
 
         var filtro = {
-            "oder.id": id
+            "order.id": id
         }
 
         Mercadopago.payment.search({
@@ -58,6 +58,8 @@ app.post('/not', (req, res)=> {
         })
 
     },20000)
+
+    res.send('Ok')
 })
 
 app.listen(80, () => {
