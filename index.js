@@ -4,7 +4,7 @@ const app = express()
 
 Mercadopago.configure({
     sandbox: true,
-    access_token: 'APP_USR-8248481310805126-020815-59ca03eb9a4e83a3c94b3f2b44d11c0b-172871784'
+    access_token: 'TEST-8248481310805126-020815-03f126d96e1cd34634281767c91a2df4-172871784'
 })
 
 app.get('/', (req, res)=> {
