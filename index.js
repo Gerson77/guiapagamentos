@@ -45,6 +45,6 @@ app.post('/not', (req, res)=> {
     res.send('Ok')
 })
 
-app.listen(3000, () => {
+app.listen(80, () => {
     console.log('Server running...')
 })
