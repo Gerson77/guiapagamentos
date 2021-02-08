@@ -32,7 +32,7 @@ app.get('/pagar', async (req, res)=> {
     }
     try {
         var pagamento = await Mercadopago.preferences.create(dados)
-        console.log(pagamento)
+        //console.log(pagamento)
         return res.redirect(pagamento.body.init_point);
     } catch (err) {
         return res.send(err.message)
